@@ -395,6 +395,17 @@ section {
     font-weight: 500;
 }
 
+@media (max-width: 768px) {
+    .category-item {
+        height: 300px;
+    }
+
+    .category-item-img {
+        width: auto;
+        height: auto;
+    }
+}
+
 /*-----------------------------------*\
   #POPULAR VIDEOS
 \*-----------------------------------*/
@@ -406,13 +417,6 @@ section {
     background-size: 100% 100%;
 }
 
-
-@media (max-width: 576px) {
-    #pop-videos {
-      margin: 0 5%;
-    }
-  }
-  
   .popvid-title h1 {
     padding-bottom: 2rem;
     font-size: 4rem;
@@ -485,6 +489,22 @@ section {
     box-shadow: 0 0 0 5px #3b83f65f;
     color: #fff;
   }
+
+  @media (max-width: 768px) {
+    #pop-videos {
+        margin: 0 5%;
+      }
+
+    .col-vid {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-vid {
+        width: 100%;
+    }
+}
 
 /*-----------------------------------*\
   #RECOMMENDED ARTICLE
@@ -573,21 +593,6 @@ section {
     background-size: 100% 100%;
 }
     
-    @media screen and (max-width: 576px) {
-    #pop-books {
-    margin: 0 5%;
-    }
-
-    .col-b {
-        max-width: 60%;
-    }
-    
-    .col-b img {
-        height: 50%;
-        padding-bottom: 3rem;
-    }
-}
-
 .popbook-title h1 {
     padding-bottom: 2rem;
     font-size: 4rem;
@@ -609,6 +614,27 @@ section {
     .col-b img {
     width: 70%;
     padding-bottom: 3rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .col-b {
+            width: 100%;
+            padding-bottom: 3rem;
+        }
+
+        .col-b img {
+            width: 70%;
+        }
+    }
+ 
+    @media only screen and (max-width: 576px) {
+        #pop-books {
+            margin: 0 5%;
+        }
+    
+        .popbook-title {
+            font-size: 2rem;
+        }
     }
 
 /*-----------------------------------*\
@@ -651,8 +677,9 @@ section {
   #CONTACT
 \*-----------------------------------*/
 #contact {
-    padding: 10%;
-    background-color: var(--white);
+    padding: 6rem;
+    /* background-color: #eee; */
+    /* background-image: url(./img/); */
 }
 
 #desc {
@@ -780,65 +807,4 @@ footer {
     background-color: var(--blue3);
     color: #ffffff;
     padding: 6px;
-}
-
-
-/* MEDIA QUERIES */
-
-
-/* HERO */
-
-
-/* CATEGORY */
-@media (max-width: 768px) {
-    .category-item {
-        height: 300px;
-    }
-
-    .category-item-img {
-        width: auto;
-        height: auto;
-    }
-}
-
-/* POP VIDEOS */
-@media (max-width: 768px) {
-
-    .col-vid {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .col-vid {
-        width: 100%;
-    }
-}
-
-/* POP BOOKS */
-@media only screen and (max-width: 768px) {
-    .col-b {
-        width: 100%;
-        padding-bottom: 3rem;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    #pop-books {
-        padding: 3rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    .col-b {
-        width: 100%;
-    }
-
-    .col-b img {
-        width: 100%;
-    }
-
-    .popbook-title {
-        font-size: 2rem;
-    }
 }
