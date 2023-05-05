@@ -20,7 +20,6 @@
   border: none;
   text-decoration: none;
   transition: 0.5s linear;
-
 }
 
 *::selection {
@@ -55,7 +54,7 @@ section {
 }
 
 /*-----------------------------------*\
-  #HEADER
+#HEADER
 \*-----------------------------------*/
 .header {
   position: fixed;
@@ -68,21 +67,14 @@ section {
 }
 
 /*-----------------------------------*\
-  #NAVBAR
+#NAVBAR
 \*-----------------------------------*/
 
-.header .flex .logo {
-  font-size: 2.5rem;
-  color: var(--white);
-}
-
-.navbar a:focus,
-.navbar a:hover {
+.navbar a:focus, .navbar a:hover {
   color: var(--blue);
 }
 
-.navbar a:focus:after,
-.navbar a:hover:after {
+.navbar a:focus:after, .navbar a:hover:after {
   width: 100%;
   left: 0%;
 }
@@ -96,21 +88,22 @@ section {
   width: 0%;
   height: 2px;
   background-color: var(--blue);
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
+  transition: width 400ms ease-in-out, left 400ms ease-in-out;
+}
+
+.nav-btn #signup, .nav-btn #login {
+  width: 105px;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out, box-shadow 400ms ease-in-out, border-color 400ms ease-in-out;
 }
 
 .nav-btn #signup {
-  width: 105px;
-  font-size: 2rem;
   color: var(--blue);
-  font-weight: 500;
-  padding: 1rem 1rem;
   border-style: solid;
-  border-radius: 12px;
   border-color: var(--blue);
-  border-width: 2px;
   background-color: var(--white);
 }
 
@@ -123,16 +116,10 @@ section {
 }
 
 .nav-btn #login {
-  width: 105px;
   margin-left: 2rem;
-  font-size: 2rem;
   color: var(--white);
-  font-weight: 500;
-  padding: 1rem 1rem;
-  border-style: solid;
-  border-radius: 12px;
-  background-image: linear-gradient(144deg, var(--peach), 10%, var(--blue), var(--orange));
   border: 0;
+  background-image: linear-gradient(144deg, var(--peach), 10%, var(--blue), var(--orange));
 }
 
 .nav-btn #login:hover {
@@ -164,9 +151,7 @@ section {
   border: none;
   background: none;
   text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
+  transition: color 400ms ease-in-out;
   text-decoration: none;
 }
 
@@ -180,30 +165,25 @@ section {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: var(--blue2);
+  background-color:var(--blue2);
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
-
   .hamburger-menu {
       display: block;
       cursor: pointer;
   }
-
   .hamburger-menu.active span:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
   }
-
   .hamburger-menu.active span:nth-child(2) {
       opacity: 0;
   }
-
   .hamburger-menu.active span:nth-child(3) {
       transform: rotate(-45deg) translate(5px, -5px);
   }
-
   .nav-links {
       position: fixed;
       top: 0;
@@ -211,57 +191,38 @@ section {
       width: 30%;
       height: 100vh;
       padding-top: 20%;
-      background-color: #eee;
+      background-color: #eeeeee;
       text-align: left;
       flex-direction: column;
       transition: all 0.5s ease;
+      visibility: hidden;
   }
-
   .show-menu .nav-links {
       right: 0;
-      /* padding-top: 20%; */
       visibility: visible;
   }
-
   .nav-links li {
       margin: 0.7rem 0;
   }
-
-  .show-menu .nav-links {
-      visibility: visible;
-  }
-
-
-  @media screen and (max-width: 576px) {
-      .nav-links{
-          right: -40%;
-          width: 40%;
-          height: 100vh;
-          padding-top: 40%;
-          
-      }
-  }
 }
 
-/*-----------------------------------*\
-  #ALL ARTICLE
-\*-----------------------------------*/
-
-.sub-header {
-  height: 70vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/header.jpg);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 10rem;
-}
-
-.sub-header h1 {
-  margin-top: 200px;
-  font-weight: 700;
-  font-size: 4rem;
+@media screen and (max-width: 576px) {
+  .header {
+      padding: 2rem 3rem;
+  }
+  .nav-links {
+      right: -40%;
+      width: 40%;
+      height: 100vh;           
+  }
+  .logo img {
+      width: 70%;
+  }
+  .nav-btn #signup,
+  .nav-btn #login {
+      width: 90px;
+      font-size: 1.4rem;
+  }
 }
 
 
@@ -269,16 +230,107 @@ section {
   #DETAIL ARTICLE
 \*-----------------------------------*/
 
-.art-subheader {
-  height: 70vh;
+.sub-header {
+  min-height: 70vh;
   width: 100%;
-  background-image: url(img/art_header.jpeg);
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/header.jpg);
   background-position: center;
   background-size: cover;
-  text-align: center;
-  color: #fff;
-  margin-top: 9rem;
+  position: relative;
   margin-bottom: 5rem;
+}
+
+.sub-header h1 {
+  text-align: center;
+  margin-top: 20rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--white);
+}
+
+.sub-header h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+/* article-content */
+.article-content {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+.article-left {
+  flex-basis: 65%;
+}
+.article-left img {
+  width: 100%;
+  margin-top: 7rem;
+}
+.article-left h1 {
+  text-align: center;
+  color: #222;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.article-left h3 {
+  color: #555;
+  text-align: left;
+}
+.article-left h5 {
+  text-align: center;
+  color: #555;
+  padding-bottom: 10px;
+}
+.article-left p {
+  font-size: 1.5rem;
+  color: #999;
+  padding: 0;
+  text-align: justify;
+}
+.article-right {
+  flex-basis: 32%;
+}
+.article-right h3 {
+  margin-top: 7rem;
+  background: var(--blue3);
+  color: #fff;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+}
+.article-right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+}
+
+.article-right2 {
+  flex-basis: 65%;
+}
+.article-right2 h3 {
+  color: #555;
+  text-align: left;
+}
+.article-right2 p {
+  font-size: 1.5rem;
+  color: #999;
+  padding: 0;
+  text-align: justify;
+}
+.article-left2 {
+  flex-basis: 32%;
+}
+.green {
+  color: var(--blue3);
+  font-size: 2.3rem;
+  text-align: justify;
+  margin-top: 16rem;
+  padding-left: 3rem;
 }
 
 /*-----------------------------------*\
@@ -286,6 +338,7 @@ section {
 \*-----------------------------------*/
 #footer {
   background-color: var(--light-blue);
+  margin-top: 5rem;
 }
 
 #logo img {

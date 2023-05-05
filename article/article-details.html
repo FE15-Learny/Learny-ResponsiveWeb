@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learny</title>
-  <link rel="stylesheet" type="text/css" href="article.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learny</title>
+    <link rel="stylesheet" type="text/css" href="article.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d23b8f6a61.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!---------------------------------- HEADER ---------------------------------->
+<!---------------------------------- HEADER ---------------------------------->
 
-  <header class="header">
+<header class="header">
     <nav class="navbar">
-        <a href="#" class="logo">
-            <img src="https://i.ibb.co/tqZ7Tmg/logo.png" alt="Learny logo" />
+        <a href="#home" class="logo">
+            <img src="img/logo.png" alt="Learny logo" />
         </a>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#category">Category</a></li>
+            <li><a href="../category/category.html">Category</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -30,6 +31,10 @@
         <div class="nav-btn">
             <button id="signup"> Sign Up</button>
             <button id="login"> Log In</button>
+            <button id="profile" style="display:none;">
+                <img src="../landing page/img/icon-profile.png" width="30" alt="username">
+                    Skilvul - FE 15
+            </button>
         </div>
 
         <div class="hamburger-menu">
@@ -38,21 +43,146 @@
             <span></span>
         </div>
     </nav>
-  </header>
+</header>
 
-<main>
+    <!---------------------------------- ARTICLE -------------------------------------->
 
-  <!-- END HEADER -->
+    <!-- article Page Content -->
+    <section class="article-content">
+    <div class="row">
+        <div class="article-left">
+            <img src="img/art_header.jpeg">
+            <h1>When FrontEnd Means Full Stack</h1>
+            <h5><u>Chris Coyier | May 2020</u></h5>
+            <h3>Reflections on the shifting responsibilities of frontend developers.</h3>
+            <p>The moment I fell in love with frontend development was the moment I discovered the style.css file in WordPress themes. I could (can!) change a handful of lines and totally change the look and feel of a website—and that, in turn, can alter the way you feel about a piece of writing, make you feel more comfortable buying tickets to an event, or increase the likelihood youʼll share something with your friends. Frontend development is at the intersection of art and logic, business and expression, left brain and right brain, design and nerdery. I love it.</p><br>
+            <p>As a job title, “frontend developer” is fairly well-defined and understood. As long as the job is building websites, frontenders are focused on the browser. Even as the job has changed over the decades, we’ve remained browser people. But there’s a pile of new stuff we’re now expected to do, particularly if we’re building a site with a modern JavaScript framework like React, Angular, or Vue.</p><br>
+            <p>Though they (and their makers) differ when it comes to syntax and approach, all modern frameworks agree in one critical way: Everything is a component. Even native JavaScript is moving toward its own model of web components. And I like it, this idea of components. You nest and piece them together as needed, which allows you to construct the abstractions that make the most sense for what you’re building. Your card component does all the stuff your real-life card needs to do. Your form component does forms the way your website needs to do forms.</p><br>
+            <p>Still, components are a new concept to old developers like me; all this custom component creation has turned me into a site-level architect. Components in JavaScript have taken hold in a way that components on the server side never did. I’ve worked on (and still work on) many a WordPress website where the closest I came was breaking templates into little include() statements. I’ve worked on Ruby on Rails sites with partials that take a handful of local variables. Those are useful for building reusable parts, but they’re a far cry from the robust component models that JavaScript frameworks offer us.</p><br>
+            <p>This style of frontend development has really become full-stack development, and components are at the heart of it—so letʼs get into how they work.</p><br>
+        </div>
+        <div class="article-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>HTML/CSS</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>JavaScript</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Attractive Web Design</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Full Stack Developer</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Front-End Developer</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Build Your Website</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Programmer</span>
+                <span>30</span>
+            </div>
+            <p class="green">
+                Not only has the to-do list grown longer, but the central questions are also bigger.
+            </p>
+        </div>
+    </div>
 
-  <!---------------------------------- ARTICLE  -------------------------------------->
-  <!---------------------------------- FOOTER  -------------------------------------->
-      
-  <section id="footer">
+    <div class="row">
+        <div class="article-left2">           
+        </div>
+        <div class="article-right2">
+            <h3>Architecture</h3>
+            <p>Say I’m working on an explore page for a social coding platform. Naturally I have a button component, an icon component; and I’ll use both in my card component. My card component then lives in a grid component, which lays them out and paginates them. The header component has a searchbar component and a usermenu component. The sidebar component has a navigation component and an ad component.</p><br>
+            <p>In fact, the whole page is just a bespoke combination of components. Assuming I’m all in on building our frontend in JavaScript, this combination of components is probably based on the URL. I’ll have code that says, “When the URL matches /explore/tennessee/, render this particular set of components.”</p><br>
+            <p>Now that I’m dealing with URLs myself, I’m essentially the architect of the entire site. Like I told ya, a whole new haystack of responsibility. I’m hesitant to pass judgement on whether this is a good or bad thing. It’s more a shifting of control. If you like the control, it might be great. If you don’t, it might feel like you’re being stretched even thinner because you need to know and be responsible for even more than before.</p><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="article-left">
+            <h3>Data</h3>
+            <p>Here’s another example: Components that are in charge of displaying content are usually not hard-coded with that content in them. They’re built to be templates, to accept data and construct themselves based on that data. In the olden days, when we were doing this kind of templating, the data had probably already arrived on the page by the time we were working on it. But in a JavaScript-powered app today, it’s more likely that the data is fetched by JavaScript. (Perhaps we fetch it when the component renders.)</p><br>
+            <p>In a stack I’m working with right now, the frontend is in React, the API is in GraphQL, and the data is queried through Apollo Client. We use a special hook in the React components to run the queries to fetch the data we need, and another special hook when we need to change that data. Guess who does that work. Is it another category of developer who specializes in data layer work? Nope. This is now part of the domain of frontend development.</p><br>
+        </div>
+        <div class="article-right">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="article-left2">           
+        </div>
+        <div class="article-right2">
+            <h3>State</h3>
+            <p>Speaking of data, there’s a lot more data a website has to deal with that doesn’t come from a database or an API. Which tab is active right now? Is this modal dialog open or closed? Which bar of this accordion is expanded? Is this message bar in an error state or a warning state? How many pages are you paginated in? Frontend developers have been dealing with this kind of state for a long time—but it’s also gotten us into trouble before. A modal dialog can be open with a modifier class like &lt;div class="modal is-open"&gt;, and toggling that class is easy enough with modal.classList.toggle(".is-open");. But that’s a purely visual treatment. How does anything else on the page know if that modal is open or not, in case it needs to?</p><br>
+            <p>In a lot of jQuery-style apps, you would ask the DOM. The DOM is the source of truth. All sorts of problems stem from this architecture, from a simple class name change destroying functionality in weirdly insidious ways (like adding an innocuous-seeming <span>, which breaks a selector on the login button, making it impossible to log in) to hard-to-reason-about application logic making bug fixing a difficult proposition.</p><br>
+            <p>What if state was dealt with in a more considered way? React made state management a built-in feature and is available to every component you build with it. Most JavaScript frameworks built the concept right in, and third-party libraries continue to pave the way. But who architects, enforces, and implements this state management? Frontend developers.</p><br>    
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="article-left">
+            <h3>All together now</h3>
+            <p>Not only has the to-do list grown longer, but the central questions are also bigger. Should we pick a CMS with an API that will facilitate the kind of frontend building we want to do? Perhaps a headless CMS? Assuming we’re using a JavaScript framework, which one? Why? Can we get a GraphQL API going so we can ask for whatever we need, whenever we need it? Can we statically render this site, even if we’re building with a JavaScript framework? Or server-side render it? Isn’t this important for SEO, speed, and resilience? What are the components we need? A Card, Icon, SearchForm, SiteMenu, Img—can we scaffold these out? Should we start with some kind of design framework on top of the base framework? Should we look at a third-party component library? What’s the client state we might need? How much of this state can be handled at the individual component level, and how much needs to be higher-level? How much of this data can we get at the individual component level, and how much should come down from above? With responsive image syntax, lazy loading, multiple formats, and CDNs to grapple with, how are we going to handle images (the web’s heaviest assets)?</p><br>
+            <p>Frontend developers responsible for architecture and data are asking themselves questions that once would have been answered by backend developers. What tools are we going to use for routing? How are we dealing with caching? What about offline support? How is the login/auth system going to work?</p><br>
+            <p>Meanwhile, frontend developers more focused on design ask: How much of the styling of this component should be scoped to itself, and how much should come from more global styles? Which styling solutions should we be looking at? Is Sass still the right tool for the job in this new world of components? How can our design be both consistent and supportive of creativity and flexibility?</p><br>
+            <p>Most of these questions have rarely, if ever, been asked by frontend developers before now. They also add to the pile of things we were already doing: executing design, semantics, accessibility, and performance. Frontend developers still need to be proficient in HTML, CSS, JavaScript, and how the browser works.</p><br>
+            <p>We handle this growing responsibility in different ways. Even though we all technically fall within the same big-tent title, many frontend developers wind up specializing. Often, we don’t have a choice. The term “unicorn” once described the extremely rare person who was good at both frontend and backend development, but these days it’s just as rare to find people skilled at the full spectrum of frontend development. In fact, the term “full stack” has largely come to mean “a frontend developer who does a good amount of the stuff a backend developer used to do.”</p><br>
+            <p>We’ve also invented systems to ease the burden. It’s no wonder design systems have taken off in recent years; we’re already building components, so thinking about design in a systematic way is a natural fit. A good design system makes things easier. With design and functionality choices already made, frontend development can focus on composing components—which is still plenty of work, but perhaps less overwhelming.</p><br>
+        </div>
+        <div class="article-right">
+            <p class="green">
+                Not only has the to-do list grown longer, but the central questions are also bigger.
+            </p> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="article-left2">           
+        </div>
+        <div class="article-right2">
+            <h3>The shifting stack</h3>
+            <p>How we talk about building websites has changed a lot in the last decade. Some of my earliest experiences with web development were with WordPress, which needs a web server to run, is written in PHP, and stores data in a MySQL database. As much as WordPress has evolved over the years, the stack—which uses the acronym LAMP (or Linux, Apache, MySQL, and PHP)—is still the same. LAMP is made up of backend technologies; as a frontend developer, almost nothing about that stack is relevant to me.</p><br>
+            <p>Since then, newer stacks have emerged, such as MEAN (or Mongo, Express, Angular, and Node.js). Notice how this stack inches toward the frontend? Thanks to the inclusion of a frontend JavaScript framework (Angular) and the fact that the rest of the stack is focused on JavaScript, MEAN’s growth in popularity also meant the growth in talking about frontend technologies as an important part of any stack.</p><br>
+            <p>Node.js is another huge part of this story: The environment allows a JavaScript-proficient frontend developer to do server-side work. “Serverless,” that modern tech buzzword, is largely about running small bits of code—most often in Node.js, and written by JavaScript developers—on cloud servers. Frontend developers can easily write their own serverless functions today, essentially acting as their own backend developers. If they were to call themselves full-stack developers, they’d be right.</p><br>
+            <p>In 2019, Shawn Wang coined the acronym STAR, or design System, TypeScript, Apollo, and React, to describe a new stack. It represents an incredible shift—it’s a way of talking about the stack that powers a website that’s based entirely on frontend technologies. I couldn’t have imagined this in my wildest dreams in 2009, and I can’t even begin to guess what 2029 will look like.</p><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="article-left">
+            <h3>The web is growing and so are you(r responsibilities)</h3>
+            <p>Being a frontend developer requires an ever-larger grab bag of skills. It’s the natural outcome of the web getting bigger. As more people use the web, as the internet economy expands, and as browsers gain more capabilities and grow more complex, our expectations of what’s possible on the web grow with them.</p><br>
+            <p>We’ve already reached a point where most aren’t familiar with the entire growing pile of frontend responsibilities. Many design-focused developers who excel at creative and well-implemented HTML and CSS continue to do well at their jobs, but postings for that kind of role are dwindling. Instead, employers are increasingly looking for developers adept at particular frameworks. Systems-focused developers, as well as entire agencies, specialize in helping other companies build and implement design systems. Data-focused developers feel most at home making data flow through a website—getting hot and heavy with business logic. All of these people might have “frontend developer” on their business cards, but their responsibilities, and even their expectations of their work, might differ greatly, which also impacts the hiring process. In time, I think we’ll find better ways to talk about these distinctions, and companies will get better at spelling out exactly what skills they’re looking for in a frontend developer.</p><br>
+            <p>If you feel like you’re falling behind, you’re not alone. Everybody has weak spots, or entire areas they just don’t know the first dang thing about. The good news is that not only can you specialize, you probably should—in fact, you’ll probably end up specializing to some degree whether you plan to or not.</p><br>
+            <p>For now, frontend developers have this in common: When we type a &lt;button&gt;, we’re quite literally putting a button into a browser window for users to interact with. When we adjust a color, we’re adjusting exactly what our sighted users see. That’s not so different from a ceramic artist pulling a handle out of clay for a coffee cup. It’s applying craftsmanship to a digital experience.</p><br>
+            <p>While backend developers may (and should, and often do) care deeply about a site’s users, they are, as Monica Dinculescu once told me, “outsourcing that responsibility.” We frontend developers take on the role of caring for users most directly. And our users live in a world that’s much bigger than their browsers. They speak different languages. They want different things. They’re trying to solve different problems. They have different abilities. They have different levels of urgency. They’re also why we build things at all. They’re who I’m trying to impress with my mad CSS skills. Who I’m trying to get to buy my widget. Who my business charts hinge upon. Whose reaction can sway my emotions like yarn in the breeze.</p><br>
+            <p>Being a frontend developer puts us between the thing we’re building and the people we’re building it for—and that’s a place some of us really enjoy being, even if it means taking on ever-larger bundles of responsibility from that big haystack of work. Weighty stuff, isn’t it?</p><br>
+        </div>
+        <div class="article-right">
+            <p class="green">
+                As browsers gain more capabilities and grow more complex, our expectations of what’s possible on the web grow with them.
+            </p>
+        </div>
+    </div>
+    </section>
+    <!---------------------------------- FOOTER  -------------------------------------->
+
+<section id="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div id="logo">
-                    <img src="https://i.ibb.co/tqZ7Tmg/logo.png" alt="Learny logo" />
+                    <img src="./img/logo.png" alt="Learny logo" />
                     <h3>An Online Platform That Aims To Improve Students' Literacy Skills</h3>
                 </div>
             </div>
@@ -61,26 +191,26 @@
                     <div class="col-sm-6 col-md-4">
                         <h2>Pages</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#hero">Home</a></li>
-                            <li><a href="#category">Category</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="./landpage.html#home">Home</a></li>
+                            <li><a href="./landpage.html#category">Category</a></li>
+                            <li><a href="./landpage.html#about">About</a></li>
+                            <li><a href="./landpage.html#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-4">
                         <h2>Category</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#category">E-Book</a></li>
-                            <li><a href="#category">Article</a></li>
-                            <li><a href="#category">Video</a></li>
+                            <li><a href="./landpage.html#category">E-Book</a></li>
+                            <li><a href="./landpage.html#category">Article</a></li>
+                            <li><a href="./landpage.html#category">Video</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-12 col-md-4">
                         <h2>Contact</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#contact">(021) 444-6254</a></li>
-                            <li><a href="#contact">learny@gmail.com</a></li>
-                            <li><a href="#contact">Jakarta, Indonesia</a></li>
+                            <li><a href="./landpage.html#contact">(021) 444-6254</a></li>
+                            <li><a href="./landpage.html#contact">learny@gmail.com</a></li>
+                            <li><a href="./landpage.html#contact">Jakarta, Indonesia</a></li>
                         </ul>
                     </div>
                 </div>
@@ -91,7 +221,7 @@
                 <div id="partner">
                     <h2>Challenge Partner</h2>
                     <a href="https://skilvul.com">
-                        <img src="https://i.ibb.co/b6C5V3G/logo-skilvul.png" alt="logo-skilvul" width="110"
+                        <img src="img/logo-skilvul.png" alt="logo-skilvul" width="110"
                             class="partner-img">
                     </a>
                     <br>
@@ -100,18 +230,18 @@
             </div>
         </div>
     </div>
-  </section>
+</section>
 
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 
 <!---------------------------------- FOOTER BOTTOM -------------------------------------->
 <footer>
-  <div class="footer-bottom">
-      <p>&copy; 2023 Learny. All rights reserved.</p>
-  </div>
+    <div class="footer-bottom">
+    <p>&copy; 2023 Learny. All rights reserved.</p>
+    </div>
 </footer>
 
 </html>
