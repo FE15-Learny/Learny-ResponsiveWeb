@@ -778,6 +778,8 @@ section {
 
 #partner {
     padding-left: 20rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     text-align: center;
 }
 
@@ -806,5 +808,5 @@ footer {
     text-align: center;
     background-color: var(--blue3);
     color: #ffffff;
-    padding: 6px;
+    /* padding: 1px; */
 }
