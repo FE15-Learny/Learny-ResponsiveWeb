@@ -10,9 +10,6 @@ hamburgerMenu.addEventListener("click", () => {
   navLinks.classList.toggle("show-menu");
 });
 
-<<<<<<< HEAD
-
-
 // ==================== BUTTON LOGIN / SIGN UP ============================
 
 // kode JavaScript untuk mengarahkan pengguna ke halaman login.html saat tombol Log In ditekan
@@ -35,5 +32,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
-=======
->>>>>>> 1e93531b0c0991f561e8a781d6beedf4c588bdde
