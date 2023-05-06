@@ -47,7 +47,7 @@ html {
 }
 
 .background {
-  background-image: url(/img/hero-banner.png);
+  background-image: url(/loginpage/img/hero-banner.png);
   background-repeat: no-repeat;
   background-size: 35%;
   background-position: left;
