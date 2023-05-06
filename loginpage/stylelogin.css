@@ -46,13 +46,6 @@ html {
   border-radius: 5rem;
 }
 
-.background {
-  background-image: url(/loginpage/img/hero-banner.png);
-  background-repeat: no-repeat;
-  background-size: 35%;
-  background-position: left;
-}
-
 body {
   background-color: var(--black);
 }
@@ -131,19 +124,6 @@ section {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
-}
-
-.button-login {
-  background-color: #096dd9;
-  color: #e6f7ff;
-  border: 1px solid #096dd9;
-  border-radius: 20px 20px;
-  padding: 20px;
-  font-size: 2rem;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  margin-top: 1rem;
 }
 
 .nav-btn {
@@ -447,20 +427,20 @@ section {
 }
 
 #desc #title {
-  position: relative;
-  left: 25%;
+  text-align: center;
+  width: 337px;
+  height: 39px;
+  left: 865px;
+  top: 163px;
 
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 26px;
   line-height: 39px;
 }
 
 #desc #title-2 {
-  position: relative;
-  left: 25%;
-
   color: var(--blue2);
   font-size: 4rem;
 }
@@ -468,7 +448,6 @@ section {
 #form {
   position: relative;
   top: 50%;
-  left: 25%;
   font-size: 15px;
   text-align: start;
   font-weight: normal;
@@ -510,8 +489,6 @@ section {
 }
 
 #submit-login2 {
-  position: relative;
-  left: 25%;
   background-color: #096dd9;
   color: #e6f7ff;
   border: 1px solid #096dd9;
@@ -525,8 +502,6 @@ section {
 }
 
 #submit-signup2 {
-  position: relative;
-  left: 25%;
   background-color: #ffffff;
   color: #979797;
   border: 1px solid #0050b3;
@@ -540,8 +515,6 @@ section {
 }
 
 #submit-signup {
-  position: relative;
-  left: 25%;
   background-color: #096dd9;
   color: #e6f7ff;
   border: 1px solid #096dd9;
@@ -555,8 +528,6 @@ section {
 }
 
 #submit-login {
-  position: relative;
-  left: 25%;
   background-color: #ffffff;
   color: #979797;
   border: 1px solid #0050b3;
