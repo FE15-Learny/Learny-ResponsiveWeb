@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learny - Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="stylelogin.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body class="background">
+    <!---------------------------------- HEADER ---------------------------------->
+
+    <header class="header">
+      <section class="flex">
+        <!-- Navbar -->
+        <a href="#" class="logo">
+          <img src="https://i.ibb.co/tqZ7Tmg/logo.png" alt="Learny logo" />
+        </a>
+
+        <nav class="navbar">
+          <a href="/landing page/landpage.html">Home</a>
+          <a href="#category">Category</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-btn">
+          <button id="signup">Sign Up</button>
+          <button id="login">Log In</button>
+        </div>
+      </section>
+    </header>
+    <!-- END HEADER -->
+
+    <main>
+      <!---------------------------------- CONTACT ---------------------------------->
+
+      <section id="contact" class="background">
+        <div id="desc">
+          <span id="title"> Create your free account</span> <br />
+
+          <a href="signup.html">
+            <button type="submit" id="submit-signup">Sign Up</button>
+          </a>
+
+          <a href="login.html">
+            <button type="submit" id="submit-login">Login</button>
+          </a>
+
+          <br />
+        </div>
+
+        <form id="form" action="/homepage/homepage.html">
+          <p>Full Name</p>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name here"
+            required
+          />
+          <p>Email</p>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your Email Here"
+            required
+          />
+          <p>Password</p>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your Password Here"
+            required
+          />
+
+          <div class="form-checkbox">
+            <label>Already have a account?</label>
+            <a href="login.html">Login</a>
+          </div>
+
+          <button type="submit" id="submit-form">Submit</button>
+
+          <div id="warning"></div>
+        </form>
+      </section>
+
+      <!---------------------------------- FOOTER  -------------------------------------->
+
+      <section id="footer">
+        <div id="logo">
+          <img src="https://i.ibb.co/tqZ7Tmg/logo.png" alt="Learny logo" />
+          <h3>
+            An Online Platform That Aims To <br />
+            Improve Students' Literacy Skills
+          </h3>
+        </div>
+
+        <div id="menu" class="menu-container">
+          <ul class="menu-item">
+            <h2>Pages</h2>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#category">Category</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="menu-item">
+            <h2>Category</h2>
+            <li><a href="#category">E-Book</a></li>
+            <li><a href="#category">Article</a></li>
+            <li><a href="#category">Video</a></li>
+          </ul>
+          <ul class="menu-item">
+            <h2>Contact</h2>
+            <li><a href="#contact">(021) 444-6254</a></li>
+            <li><a href="#contact">learny@gmail.com</a></li>
+            <li><a href="#contact">Jakarta, Indonesia</a></li>
+          </ul>
+        </div>
+
+        <div id="partner">
+          <h2>Challenge Partner</h2>
+          <a id="link" href="https://skilvul.com">
+            <img
+              src="https://i.ibb.co/b6C5V3G/logo-skilvul.png"
+              alt="logo-skilvul"
+              width="110"
+              class="partner-img"
+            />
+          </a>
+          <br />
+          <a id="link" href="https://skilvul.com">Skilvul</a>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <!---------------------------------- FOOTER BOTTOM -------------------------------------->
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Learny. All rights reserved.</p>
+    </div>
+  </footer>
+</html>
