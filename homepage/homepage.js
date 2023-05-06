@@ -54,46 +54,29 @@ document.addEventListener("DOMContentLoaded", function() {
   
 
 
-  // PROFILE
+//   // PROFILE
 
-// Get buttons
-const signupBtn = document.getElementById("signup");
-const loginBtn = document.getElementById("login");
-const profileBtn = document.getElementById("profile");
+// // Get buttons
+// const signupBtn = document.getElementById("signup");
+// const loginBtn = document.getElementById("login");
+// const profileBtn = document.getElementById("profile");
 
-// Add event listener to signup button
-signupBtn.addEventListener("click", function() {
-  // Perform signup process here
-  // If signup is successful, hide signup and login buttons, and show profile button
-  signupBtn.style.display = "none";
-  loginBtn.style.display = "none";
-  profileBtn.style.display = "block";
-});
+// // Add event listener to signup button
+// signupBtn.addEventListener("click", function() {
+//   // Perform signup process here
+//   // If signup is successful, hide signup and login buttons, and show profile button
+//   signupBtn.style.display = "none";
+//   loginBtn.style.display = "none";
+//   profileBtn.style.display = "block";
+// });
 
-// Add event listener to login button
-loginBtn.addEventListener("click", function() {
-  // Perform login process here
-  // If login is successful, hide signup and login buttons, and show profile button
-  signupBtn.style.display = "none";
-  loginBtn.style.display = "none";
-  profileBtn.style.display = "block";
-});
+// // Add event listener to login button
+// loginBtn.addEventListener("click", function() {
+//   // Perform login process here
+//   // If login is successful, hide signup and login buttons, and show profile button
+//   signupBtn.style.display = "none";
+//   loginBtn.style.display = "none";
+//   profileBtn.style.display = "block";
+// });
 
-
-// DARI LOGIN KE HOMEPAGE
-
-const signInBtn = document.querySelector('.sign-in_btn');
-
-signInBtn.addEventListener('click', function() {
-  window.location.href = './landpage.html'; // ganti URL dengan URL halaman utama yang ingin kamu arahkan
-});
-
-// DROPDOWN
-
-  const profileButton = document.getElementById("profile");
-  const dropdown = document.getElementById("dropdown");
-
-  profileButton.addEventListener("click", () => {
-    dropdown.style.display = "block";
-  });
 
