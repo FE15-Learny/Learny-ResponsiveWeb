@@ -281,13 +281,7 @@ section {
   padding: 0px 100px;
   padding-top: 15px;
 }
-.container {
-  padding-top: 20px;
-  width: 100px;
-  padding-right: 21.5cm;
-  max-width: 100%;
-  margin: 0 auto;
-}
+
 .roa {
   flex: auto;
   display: flex;
@@ -408,6 +402,9 @@ section {
     padding: -16px -5px;
     border-radius: 5px;
   }
+  #footer {
+    margin-top: 450px;
+  }
 }
 @media only screen and (max-width: 576px) {
   #cat {
@@ -437,6 +434,9 @@ section {
     padding-right: 0cm;
     justify-content: center;
   }
+  #card {
+    padding-bottom: 10cm;
+  }
   .b-card {
     padding: 20px 4px;
   }
@@ -460,6 +460,9 @@ section {
     font-size: 8px;
     padding: -16px -5px;
     border-radius: 5px;
+  }
+  #footer {
+    margin-top: 650px;
   }
 }
 /*-----------------------------------*\

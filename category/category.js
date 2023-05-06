@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   logInButton.addEventListener("click", function () {
     // mengarahkan pengguna ke halaman login.html
-    window.location.href = "login.html";
+    window.location.href = "../login/login.html";
   });
 });
 
@@ -28,6 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   signUpButton.addEventListener("click", function () {
     // mengarahkan pengguna ke halaman signup.html
-    window.location.href = "signup.html";
+    window.location.href = "../login/signup.html";
   });
 });
