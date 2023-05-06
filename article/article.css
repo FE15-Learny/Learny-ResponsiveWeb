@@ -91,42 +91,42 @@ section {
   transition: width 400ms ease-in-out, left 400ms ease-in-out;
 }
 
-.nav-btn #signup, .nav-btn #login {
-  width: 105px;
+
+.nav-btn #profile {
+  display: flex;
+  width: 200px;
   font-size: 2rem;
-  font-weight: 500;
-  padding: 1rem 1rem;
-  border-radius: 12px;
-  transition: background-color 400ms ease-in-out, color 400ms ease-in-out, box-shadow 400ms ease-in-out, border-color 400ms ease-in-out;
-}
-
-.nav-btn #signup {
-  color: var(--blue);
-  border-style: solid;
-  border-color: var(--blue);
-  background-color: var(--white);
-}
-
-.nav-btn #signup:hover {
-  background-image: none;
-  background-color: var(--orange);
-  color: var(--black);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-color: var(--orange);
-}
-
-.nav-btn #login {
-  margin-left: 2rem;
   color: var(--white);
-  border: 0;
+  font-weight: 500;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  border-style: solid;
+  border-radius: 12px;
   background-image: linear-gradient(144deg, var(--peach), 10%, var(--blue), var(--orange));
+  border: 0;
 }
 
-.nav-btn #login:hover {
+.nav-btn #profile:hover {
   background-image: none;
   background-color: var(--orange);
   color: var(--black);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-btn #profile p{
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-btn #profile{
+        width: 160px;
+        font-size: 1.6rem;
+
+    }
+
+    .nav-btn #profile img{
+        width: 25px;
+    }
 }
 
 .logo img {
@@ -224,7 +224,6 @@ section {
       font-size: 1.4rem;
   }
 }
-
 
 /*-----------------------------------*\
   #DETAIL ARTICLE
