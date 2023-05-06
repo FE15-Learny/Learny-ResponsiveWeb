@@ -34,15 +34,9 @@
         </ul>
 
         <div class="nav-btn">
-          <button id="signup">Sign Up</button>
-          <button id="login">Log In</button>
-          <button id="profile" style="display: none">
-            <img
-              src="../landing page/img/icon-profile.png"
-              width="30"
-              alt="username"
-            />
-            Skilvul - FE 15
+          <button id="profile">
+            <img src="./img/icon-profile.png" width="30" alt="username" />
+            <p>Skilvul - FE 15</p>
           </button>
         </div>
 
@@ -53,6 +47,7 @@
         </div>
       </nav>
     </header>
+
     <!-- END HEADER -->
 
     <main>
@@ -150,80 +145,64 @@
 
       <section id="footer">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div id="logo">
-                <img src="./img/logo.png" alt="Learny logo" />
-                <h3>
-                  An Online Platform That Aims To Improve Students' Literacy
-                  Skills
-                </h3>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div id="menu" class="row">
-                <div class="col-sm-6 col-md-4">
-                  <h2>Pages</h2>
-                  <ul class="list-unstyled">
-                    <li><a href="./landpage.html">Home</a></li>
-                    <li><a href="./landpage.html#category">Category</a></li>
-                    <li><a href="./landpage.html#about">About</a></li>
-                    <li><a href="./landpage.html#contact">Contact</a></li>
-                  </ul>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="logo">
+                        <img src="./img/logo.png" alt="Learny logo" />
+                        <h3>An Online Platform That Aims To Improve Students' Literacy Skills</h3>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
-                  <h2>Category</h2>
-                  <ul class="list-unstyled">
-                    <li><a href="./landpage.html#category">E-Book</a></li>
-                    <li><a href="./landpage.html#category">Article</a></li>
-                    <li><a href="./landpage.html#category">Video</a></li>
-                  </ul>
+                <div class="col-md-4">
+                    <div id="menu" class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <h2>Pages</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="./landpage.html#home">Home</a></li>
+                                <li><a href="./landpage.html#category">Category</a></li>
+                                <li><a href="./landpage.html#about">About</a></li>
+                                <li><a href="./landpage.html#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <h2>Category</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="./landpage.html#category">E-Book</a></li>
+                                <li><a href="./landpage.html#category">Article</a></li>
+                                <li><a href="./landpage.html#category">Video</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <h2>Contact</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="./landpage.html#contact">(021) 444-6254</a></li>
+                                <li><a href="./landpage.html#contact">learny@gmail.com</a></li>
+                                <li><a href="./landpage.html#contact">Jakarta, Indonesia</a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-4">
-                  <h2>Contact</h2>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="./landpage.html#contact">(021) 444-6254</a>
-                    </li>
-                    <li>
-                      <a href="./landpage.html#contact">learny@gmail.com</a>
-                    </li>
-                    <li>
-                      <a href="./landpage.html#contact">Jakarta, Indonesia</a>
-                    </li>
-                  </ul>
+                <div class="col-sm-12 col-md-4 text-center">
+                    <div id="partner">
+                        <h2 style="white-space: nowrap;">Challenge Partner</h2>
+                        <a href="https://skilvul.com">
+                            <img src="img/logo-skilvul.png" alt="logo-skilvul" width="110"
+                                class="partner-img">
+                        </a>
+                        <br>
+                        <div class="d-flex justify-content-center w-100">
+                            <a href="https://skilvul.com" class="w-100 mx-auto text-center">Skilvul</a>
+                        </div>
+                        
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div id="partner">
-                <h2>Challenge Partner</h2>
-                <a href="https://skilvul.com">
-                  <img
-                    src="./img/logo-skilvul.png"
-                    alt="logo-skilvul"
-                    width="110"
-                    class="partner-img"
-                  />
-                </a>
-                <br />
-                <a href="https://skilvul.com">Skilvul</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-    </main>
-
-    <script src="landpage.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </section>
+    
+    <script src="category.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
 
   <!---------------------------------- FOOTER BOTTOM -------------------------------------->
   <footer>
